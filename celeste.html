@@ -310,5 +310,6 @@ html,body{background:var(--bg)}
   if (b) { const c = b.cloneNode(true); b.replaceWith(c); c.addEventListener('click', () => bespoke.dialog({ kind: 'degustation', title: 'Demander un devis', intro: 'Devis précis sous 48 h, dégustation proposée ensuite.', summary: [['Parts', $$('.opts', mb)[0].querySelector('.on').textContent], ['Étages', $$('.opts', mb)[1].querySelector('.on').textContent], ['Estimation', c.textContent.replace('Estimation : ', '')]] })); }
 })();
 </script>
+<script src="kit/cta.js" data-secteur="patisserie" data-modele="celeste" defer></script>
 </body>
 </html>
