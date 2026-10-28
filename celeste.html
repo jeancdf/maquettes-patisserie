@@ -173,7 +173,7 @@ html,body{background:var(--bg)}
 @media (max-width:760px){.dk{display:none}.mb{display:block}}
 </style>
 </head>
-<body>
+<body data-kind="degustation" data-city="Bordeaux">
 <div class="dk">
 
 <header>
@@ -286,6 +286,29 @@ html,body{background:var(--bg)}
     const i = Math.round(rail.scrollLeft / (rail.scrollWidth - rail.clientWidth) * (dots.length - 1));
     dots.forEach((d, k) => d.classList.toggle('on', k === i));
   }, { passive: true });
+</script>
+<script src="kit/bespoke.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const DECOR = { 'Épuré': 7, 'Fleurs fraîches': 8, 'Fleurs en sucre': 9, 'Fruits': 8 };
+  const num = t => parseInt(t, 10) || 0;
+  function calc(box) {
+    const g = $$('.opts', box).map(o => $('.on', o)?.textContent.trim() || '');
+    const parts = num(g[0]) || 80, etages = num(g[1]) || 3, decor = DECOR[g[2]] || 8;
+    return Math.max(0, parts * decor + (etages - 3) * 40);
+  }
+  const eur = n => n.toLocaleString('fr-FR') + ' €';
+  const dk = $('.dk .opts')?.parentElement, mb = $('.mb .opts')?.parentElement;
+  const upd = () => {
+    if (dk) $('.tot b', dk).textContent = 'dès ' + eur(calc(dk));
+    if (mb) { const b = [...mb.querySelectorAll('.btn')].find(x => /estimation/i.test(x.textContent)); if (b) b.textContent = 'Estimation : dès ' + eur(calc(mb)); }
+  };
+  document.addEventListener('bk-change', upd); upd();
+  // mobile : le bouton d’estimation ouvre la demande de devis
+  const b = mb && [...mb.querySelectorAll('.btn')].find(x => /estimation/i.test(x.textContent));
+  if (b) { const c = b.cloneNode(true); b.replaceWith(c); c.addEventListener('click', () => bespoke.dialog({ kind: 'degustation', title: 'Demander un devis', intro: 'Devis précis sous 48 h, dégustation proposée ensuite.', summary: [['Parts', $$('.opts', mb)[0].querySelector('.on').textContent], ['Étages', $$('.opts', mb)[1].querySelector('.on').textContent], ['Estimation', c.textContent.replace('Estimation : ', '')]] })); }
+})();
 </script>
 </body>
 </html>

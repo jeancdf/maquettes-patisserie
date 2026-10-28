@@ -174,7 +174,7 @@ html,body{background:var(--bg)}
 @media (max-width:760px){.dk{display:none}.mb{display:block}}
 </style>
 </head>
-<body>
+<body data-kind="traiteur" data-city="Lyon">
 <div class="dk">
 
 <header>
@@ -285,6 +285,24 @@ html,body{background:var(--bg)}
     const i = Math.round(rail.scrollLeft / (rail.scrollWidth - rail.clientWidth) * (dots.length - 1));
     dots.forEach((d, k) => d.classList.toggle('on', k === i));
   }, { passive: true });
+</script>
+<script src="kit/bespoke.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const PP = {};
+  $$('.dk .fc').forEach(c => { const n = c.querySelector('h3')?.textContent.trim(), p = parseFloat((c.querySelector('.pr b')?.textContent || '').replace(/[^0-9,]/g, '').replace(',', '.')); if (n && p) PP[n] = p; });
+  $$('.calc').forEach(box => {
+    const out = $('.res b', box);
+    const upd = () => {
+      const v = $$('.bk-in', box), get = re => v.find(i => re.test(i.dataset.label));
+      const f = get(/format/i), n = +(get(/invit/i)?.value || 0), s = get(/service/i);
+      const pp = PP[f?.value] || 32, svc = s && /avec/i.test(s.value) ? 7 : 0;
+      if (out) out.textContent = n ? '≈ ' + Math.round(n * (pp + svc)).toLocaleString('fr-FR') + ' €' : '—';
+    };
+    box.addEventListener('input', upd); box.addEventListener('change', upd); upd();
+  });
+})();
 </script>
 </body>
 </html>

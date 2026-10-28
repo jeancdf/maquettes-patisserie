@@ -177,7 +177,7 @@ html,body{background:var(--bg)}
 @media (max-width:760px){.dk{display:none}.mb{display:block}}
 </style>
 </head>
-<body>
+<body data-kind="commande" data-city="Marseille">
 <div class="dk">
 
 <header>
@@ -290,6 +290,17 @@ html,body{background:var(--bg)}
     const i = Math.round(rail.scrollLeft / (rail.scrollWidth - rail.clientWidth) * (dots.length - 1));
     dots.forEach((d, k) => d.classList.toggle('on', k === i));
   }, { passive: true });
+</script>
+<script src="kit/bespoke.js"></script>
+<script>
+(() => {
+  const PRICES = { '30': 29, '60': 55, '120': 105 };
+  document.addEventListener('bk-change', e => {
+    const o = e.target.closest('.opts'); if (!o || !o.closest('.mb')) return;
+    const n = (o.querySelector('.on')?.textContent.match(/\d+/) || [''])[0];
+    const b = o.parentElement.querySelector('.btn'); if (b && PRICES[n]) b.textContent = 'Commander · ' + PRICES[n] + ' €';
+  });
+})();
 </script>
 </body>
 </html>

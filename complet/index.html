@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Maison Lemoine — Pâtissier sur commande (maquette Complet)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Petrona:wght@500..800&family=Nunito+Sans:wght@400..700&display=swap">
+<link rel="stylesheet" href="../kit/std.css">
+<style>:root{--pri:#3B2A26;--pri-2:#55403A;--acc:#56703A;--soft:#F4F1EF;--ink:#2A1E1B;--muted:#6B5F5A;--line:#E7E1DD;--radius:6px;--fd:'Petrona';--fb:'Nunito Sans';--fdw:600}</style>
+</head>
+<body>
+<div class="topbar wrap"><span><b>Commandes ouvertes</b> · retrait dès samedi pour toute commande passée avant mercredi</span><span><span class="ph">[Adresse]</span>, <span class="ph">[Ville]</span> · <a href="tel:+33000000000"><span class="ph">[00 00 00 00 00]</span></a></span></div>
+<header class="hd wrap">
+  <a class="logo" href="index.html"><b>Maison Lemoine</b><small>Pâtissier sur commande</small></a>
+  <nav aria-label="Navigation principale"><a href="index.html" class="on" aria-current="page">Accueil</a><a href="prestations.html">Créations</a><a href="realisations.html">Galerie</a><a href="a-propos.html">L’atelier</a><a href="contact.html">Commander</a></nav>
+  <div class="side"><a class="btn sm" href="contact.html#demande">Commander un gâteau</a><button class="burger" type="button" aria-label="Menu" aria-expanded="false"><i></i></button></div>
+</header>
+<nav class="mnav" aria-label="Menu mobile"><a href="index.html" class="on" aria-current="page">Accueil</a><a href="prestations.html">Créations</a><a href="realisations.html">Galerie</a><a href="a-propos.html">L’atelier</a><a href="contact.html">Commander</a><a class="btn" href="contact.html#demande">Commander un gâteau</a></nav>
+
+<main>
+<section class="hero soft wrap" style="padding-bottom:96px">
+  <div>
+    <div class="eyebrow">Pâtisserie sur commande · <span class="ph">[Ville]</span></div>
+    <h1>Entremets et gâteaux personnalisés sur commande</h1>
+    <p class="lede">Pour un anniversaire, un baptême, un mariage ou un repas de famille. Commande en ligne, retrait à l’atelier ou livraison.</p>
+    <div class="ctas"><a class="btn" href="contact.html#demande">Commander un gâteau <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn line" href="prestations.html">Voir les créations</a></div>
+    <div class="keys"><div><b>72 h</b><span>délai de commande minimum</span></div><div><b>À la commande</b><span>chaque création est préparée pour vous</span></div><div><b>Personnalisation</b><span>message, couleurs, décor</span></div></div>
+  </div>
+  <div class="mos"><div class="a" style="background-image:url(../img/l-entremet.jpg)"></div><div class="b" style="background-image:url(../img/l-macarons.jpg)"></div><div class="c" style="background-image:url(../img/l-tarte.jpg)"></div>
+    <div class="badge"><b>72 h</b>délai de commande minimum</div></div>
+</section>
+<section class="quick wrap" aria-label="Estimez votre commande">
+  <form class="estim" action="contact.html" style="--n:3">
+    <div><h3>Estimez votre commande</h3><p class="small">Prix indicatif, décor et message compris.</p></div>
+    <div class="f"><label for="q-sel">Création</label><select id="q-sel" name="creation" data-pps><option value="entremets" data-pp="5.5" data-min="6">Entremets</option><option value="anniversaire" data-pp="5.6" data-min="8">Gâteau d’anniversaire décoré</option><option value="tarte" data-pp="4.3" data-min="6">Tarte aux fruits</option><option value="macarons" data-pp="1.5" data-min="12">Macarons (à la pièce)</option><option value="buffet" data-pp="3.5" data-min="40">Buffet sucré (à la pièce)</option><option value="wedding" data-pp="6" data-min="30">Wedding cake (à la part)</option></select></div>
+    <div class="f"><label for="q-n">Parts ou pièces</label><input id="q-n" name="parts" type="number" min="1" max="500" value="8" data-n data-unit="parts" required></div>
+    <div class="f"><label for="date">Retrait le</label><input id="date" name="date" type="date" required></div>
+    <div style="grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;border-top:1px solid var(--line);padding-top:16px">
+      <div><div class="estim-out" aria-live="polite"></div><div class="small estim-detail"></div></div>
+      <button class="btn" type="submit">Commander <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  </form>
+</section>
+<section class="s wrap">
+  <div class="sh"><div><div class="eyebrow">Créations</div><h2 class="t">Nos créations sur commande</h2></div><a class="link" href="prestations.html">Toutes les créations et prix →</a></div>
+  <div class="offers"><article class="offer hl"><div class="pic" style="background-image:url(../img/l-entremet.jpg)"></div>
+      <div class="body"><span class="tag">Les plus commandés</span><h3>Entremets et anniversaires</h3><div class="pr">à partir de <b>32 €</b></div><div class="list"><div class="check menu-l"><span>Entremets, 6 parts</span><em>dès 32 €</em></div><div class="check menu-l"><span>Gâteau décoré, 8 parts</span><em>dès 45 €</em></div><div class="check menu-l"><span>Prénom, âge, couleurs</span><em>inclus</em></div></div>
+      <a class="btn line sm go" href="prestations.html#entremets">Voir le détail</a></div></article><article class="offer"><div class="pic" style="background-image:url(../img/l-tarte.jpg)"></div>
+      <div class="body"><h3>Tartes et macarons</h3><div class="pr">à partir de <b>18 €</b></div><div class="list"><div class="check menu-l"><span>Tarte de saison, 6 parts</span><em>dès 26 €</em></div><div class="check menu-l"><span>Coffret 12 macarons</span><em>dès 18 €</em></div><div class="check menu-l"><span>Tartelettes</span><em>dès 4 €</em></div></div>
+      <a class="btn line sm go" href="prestations.html#tarte">Voir le détail</a></div></article><article class="offer"><div class="pic" style="background-image:url(../img/l-macarons2.jpg)"></div>
+      <div class="body"><h3>Réceptions</h3><div class="pr">à partir de <b>3,50 €</b> / pièce</div><div class="list"><div class="check menu-l"><span>Buffet sucré</span><em>3,50 € / pièce</em></div><div class="check menu-l"><span>Wedding cake</span><em>dès 6 € / part</em></div><div class="check menu-l"><span>Dégustation à l’atelier</span><em>sur RDV</em></div></div>
+      <a class="btn line sm go" href="prestations.html#buffet">Voir le détail</a></div></article></div>
+  <div class="note"><span>Sans gluten ou sans lactose : sur demande, selon les recettes.</span><a class="btn line sm" href="contact.html#demande">Demander un devis</a></div>
+</section>
+
+<section class="s wrap" style="padding-top:20px">
+  <div class="sh"><div><div class="eyebrow">Comment ça se passe</div><h2 class="t">Votre commande en 4 étapes</h2></div></div>
+  <div class="steps"><div class="step"><i>01</i><h3>Choisissez</h3><p>La création, le nombre de parts et la date.</p></div><div class="step"><i>02</i><h3>Personnalisez</h3><p>Message, couleurs, allergies à signaler.</p></div><div class="step"><i>03</i><h3>Confirmez</h3><p>Acompte de 30 % pour valider la commande.</p></div><div class="step"><i>04</i><h3>Récupérez</h3><p>À l’atelier ou en livraison, au créneau choisi.</p></div></div>
+</section>
+<section class="s soft wrap">
+  <div class="sh"><div><div class="eyebrow">Galerie</div><h2 class="t">Quelques créations</h2></div><a class="link" href="realisations.html">Toute la galerie →</a></div>
+  <div class="gal"><figure data-cat="Entremets" data-full="../img/l-entremet.jpg" style="background-image:url(../img/l-entremet.jpg)"><figcaption><b>Entremets chocolat</b>6 parts</figcaption></figure><figure data-cat="Entremets" data-full="../img/l-fraises.jpg" style="background-image:url(../img/l-fraises.jpg)"><figcaption><b>Fraisier</b>De mai à juillet</figcaption></figure><figure data-cat="Tartes" data-full="../img/l-tarte.jpg" style="background-image:url(../img/l-tarte.jpg)"><figcaption><b>Tarte de saison</b>6 à 8 parts</figcaption></figure><figure data-cat="Réceptions" data-full="../img/l-macarons.jpg" style="background-image:url(../img/l-macarons.jpg)"><figcaption><b>Macarons</b>Coffret de 12</figcaption></figure><figure data-cat="Entremets" data-full="../img/l-drip.jpg" style="background-image:url(../img/l-drip.jpg)"><figcaption><b>Gâteau d’anniversaire</b>8 parts</figcaption></figure></div>
+  <p class="small" style="margin-top:12px">Photographies et légendes d’illustration.</p>
+</section>
+<section class="s wrap">
+  <div class="split"><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div style="min-height:240px;background:center/cover url(../img/l-cheffe.jpg);border-radius:var(--r)"></div><div style="min-height:240px;background:center/cover url(../img/l-chef.jpg);border-radius:var(--r)"></div></div>
+    <div><div class="eyebrow">L’atelier</div><h2 class="t">Un atelier de pâtisserie, sans boutique</h2><p>Nous travaillons uniquement sur commande : chaque gâteau est préparé pour vous, à la date prévue, avec des produits de saison.</p>
+      <div class="duo"><div><b><span class="ph">[Prénom]</span></b><span>Cheffe pâtissière</span></div><div><b><span class="ph">[Prénom]</span></b><span>Pâtissier</span></div></div>
+      <p class="small">Prénoms et portraits illustratifs.</p>
+      <a class="btn line" style="margin-top:22px" href="a-propos.html">En savoir plus</a></div></div>
+</section>
+<section class="s wrap" style="padding-top:20px"><div class="band"><div><h2>Un gâteau pour une occasion ?</h2><p>Choisissez la création, le nombre de parts et la date de retrait.</p></div><a class="btn" href="contact.html#demande">Commander un gâteau</a></div></section>
+</main>
+<footer class="ft wrap">
+  <div class="top">
+    <div><a class="logo" href="index.html"><b>Maison Lemoine</b><small>Pâtissier sur commande</small></a><p style="margin-top:16px;max-width:290px">Entremets et gâteaux personnalisés sur commande à <span class="ph">[Ville]</span>.</p></div>
+    <div><h4>Pages</h4><a class="l" href="index.html">Accueil</a><a class="l" href="prestations.html">Créations</a><a class="l" href="realisations.html">Galerie</a><a class="l" href="a-propos.html">L’atelier</a><a class="l" href="contact.html">Commander</a></div>
+    <div><h4>Horaires</h4><span class="l">Mer → ven : 10 h – 19 h</span><span class="l">Samedi : 9 h – 17 h</span></div>
+    <div><h4>Contact</h4><span class="l"><span class="ph">[Adresse de l’atelier]</span></span><a class="l" href="tel:+33000000000"><span class="ph">[00 00 00 00 00]</span></a><a class="l" href="mailto:commande@nom-de-la-patisserie.fr"><span class="ph">[commande@nom-de-la-patisserie.fr]</span></a></div>
+  </div>
+  <div class="bot"><span>© <span data-year></span> Maison Lemoine · <a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#donnees">Données personnelles</a></span><span class="demo-note">Maquette — établissement fictif, informations illustratives · Réalisation : [votre nom]</span></div>
+</footer>
+<script src="../kit/std.js"></script>
+</body>
+</html>
