@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Maison Lemoine — Formule Essentiel (maquette)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<style>
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 72px;border-bottom:1px solid var(--line)}
+header nav{display:flex;align-items:center;gap:36px;font-size:15px;font-weight:600;color:var(--teal)}
+.logo b{font-size:28px;font-weight:700}
+.hero{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;padding:66px 72px 74px;align-items:center}
+.hero h1{font-family:'Petrona';font-weight:700;font-size:60px;line-height:1.04;color:var(--teal);margin:18px 0 22px}
+.hero p.lede{font-size:19px;line-height:1.6;color:#40342F;max-width:500px}
+.hero .ctas{display:flex;align-items:center;gap:24px;margin-top:34px}
+.hero .ctas a.link{color:var(--teal);font-weight:700;font-size:15px;text-decoration:underline;text-underline-offset:5px}
+.hero .meta{margin-top:30px;display:flex;gap:26px;font-size:15px;color:var(--muted)}
+.hero .meta b{color:var(--teal)}
+.hero .img{height:520px;background:url(img/l-entremet.jpg) center/cover;border-radius:6px}
+.ch{background:var(--mist);padding:76px 72px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:34px}
+.sec-head p{font-size:15px;color:var(--muted);max-width:420px;text-align:right;line-height:1.5}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px 32px}
+.pr-row{display:grid;grid-template-columns:1fr auto;gap:2px 20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.pr-row:nth-last-child(-n+2){border-bottom:0}
+.pr-row b{font-family:'Petrona';font-weight:600;font-size:21px;color:var(--teal)}
+.pr-row span{font-family:'Petrona';font-weight:700;font-size:21px;white-space:nowrap}
+.pr-row small{grid-column:1/-1;font-size:14px;color:var(--muted)}
+.inc{margin-top:22px;display:flex;justify-content:space-between;align-items:center;font-size:15.5px;color:#40342F}
+.info{display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px;padding:72px 72px 78px}
+.info h3{font-family:'Petrona';font-weight:600;font-size:24px;color:var(--teal);margin-bottom:14px}
+.info p{font-size:15.5px;line-height:1.65}
+.hrow{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+footer{background:var(--teal);color:#D3C7C1;padding:26px 72px;display:flex;justify-content:space-between;align-items:center;font-size:13.5px}
+footer .logo{color:#fff}
+footer span+span{margin-left:22px}
+</style><style>/* responsive */
+header,.topbar,section.s,.ch,.info,footer{padding-left:var(--gut)!important;padding-right:var(--gut)!important}
+.hero{padding-left:var(--gut)!important;padding-right:var(--gut)!important}
+@media (max-width:1100px){
+  :root{--gut:32px}
+  .hero{grid-template-columns:1fr!important;gap:40px!important}
+  .hero .img{height:420px!important}
+  .prices{grid-template-columns:1fr!important}
+  .pr-row:nth-last-child(2){border-bottom:1px solid var(--line)!important}
+  .info{grid-template-columns:1fr 1fr!important}
+}
+@media (max-width:700px){
+  :root{--gut:20px}
+  header{padding-top:14px!important;padding-bottom:14px!important}
+  header nav{gap:0!important} header nav span{display:none}
+  header .btn{padding:10px 14px!important;font-size:13.5px!important}
+  .logo small{display:none}
+  .hero{padding-top:36px!important;padding-bottom:48px!important}
+  .hero h1{font-size:38px!important}
+  .hero p.lede{font-size:17px}
+  .hero .ctas{flex-wrap:wrap;gap:18px!important}
+  .hero .meta{flex-direction:column;gap:6px!important}
+  .hero .img{height:280px!important}
+  .ch,.info{padding-top:52px!important;padding-bottom:52px!important}
+  .sec-head{display:block!important} h2.t{font-size:30px!important}
+  .sec-head p{text-align:left!important;margin-top:10px}
+  .prices{padding:4px 18px!important}
+  .info{grid-template-columns:1fr!important}
+  .inc{flex-direction:column;align-items:flex-start!important;gap:14px}
+  footer{flex-direction:column;gap:12px;text-align:center}
+}
+</style>
+</head>
+<body>
+<div class="site">
+    <header>
+      <div class="logo"><b>Maison Lemoine</b><small>Pâtissier sur commande</small></div>
+      <nav><span><a href="#creations">Créations</a></span><span><a href="#infos">Commander</a></span><span><a href="#infos">Contact</a></span><a class="btn" style="padding:12px 20px;font-size:14.5px">Commander un gâteau</a></nav>
+    </header>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Pâtisserie sur commande · <span class="ph" style="text-transform:none;letter-spacing:0">[Ville]</span></div>
+        <h1>Gâteaux d’anniversaire et entremets sur commande à <span class="ph" style="font-size:.6em;vertical-align:middle">[Ville]</span></h1>
+        <p class="lede">Entremets, gâteaux personnalisés, tartes et buffets sucrés. Commande 72 h à l’avance, retrait à l’atelier ou livraison.</p>
+        <div class="ctas"><a class="btn">Commander un gâteau <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="link" href="#creations">Voir les prix</a></div>
+        <div class="meta"><span><b>Commande</b> 72 h avant</span><span><b>Retrait</b> mer → sam</span><span><b>[00 00 00 00 00]</b></span></div>
+      </div>
+      <div class="img"></div>
+    </section>
+    <section class="ch" id="creations">
+      <div class="sec-head"><div><div class="eyebrow">Créations et prix</div><h2 class="t">Nos créations sur commande</h2></div>
+        <p>Prix indicatifs. Décor et message personnalisés sans supplément.</p></div>
+      <div class="prices">
+        <div class="pr-row"><b>Entremets</b><span>dès 32 €</span><small>6 parts · chocolat, fruits rouges, praliné, vanille</small></div>
+        <div class="pr-row"><b>Gâteau d’anniversaire décoré</b><span>dès 45 €</span><small>8 parts · prénom, âge, couleurs au choix</small></div>
+        <div class="pr-row"><b>Tarte aux fruits de saison</b><span>dès 26 €</span><small>6 à 8 parts</small></div>
+        <div class="pr-row"><b>Coffret de macarons</b><span>dès 18 €</span><small>12 pièces · parfums au choix</small></div>
+        <div class="pr-row"><b>Wedding cake et pièce montée</b><span>dès 6 € / part</span><small>Sur devis, à partir de 30 parts</small></div>
+        <div class="pr-row"><b>Buffet sucré</b><span>dès 3,50 € / pièce</span><small>Mignardises, tartelettes, choux · 40 pièces minimum</small></div>
+      </div>
+      <div class="inc"><span>Sans gluten ou sans lactose : sur demande, selon les recettes.</span><a class="btn line">Demander un devis</a></div>
+    </section>
+    <section class="info" id="infos">
+      <div><h3>Retrait à l’atelier</h3>
+        <div class="hrow"><span>Mercredi → vendredi</span><span>10 h – 19 h</span></div>
+        <div class="hrow"><span>Samedi</span><span>9 h – 17 h</span></div>
+        <div class="hrow"><span>Dim. → mar.</span><span>Fermé</span></div></div>
+      <div><h3>Commander</h3><p>Au moins 72 h avant, une semaine pour les gâteaux personnalisés. Acompte de 30 % à la commande.</p><p style="margin-top:12px">Livraison dans un rayon de 15 km : 10 €.</p></div>
+      <div><h3>Contact</h3>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="ph">[00 00 00 00 00]</span></div>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="ph">[Adresse de l’atelier]</span></div>
+        <a class="btn" style="margin-top:18px">Commander un gâteau</a></div>
+    </section>
+    <footer><div class="logo"><b style="font-size:21px">Maison Lemoine</b></div><div><span>© Maison Lemoine</span><span>Mentions légales</span><span>Allergènes</span></div><span>Réalisation : [votre nom]</span></footer>
+  </div>
+</body></html>

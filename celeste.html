@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Atelier Céleste — wedding cakes, Bordeaux (maquette)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Mulish:wght@300..700&display=swap">
+<style>
+/* ===== version ordinateur (maquette 1440 px, mise à l'échelle) ===== */
+:root{--sage:#5F6F63;--sage-dk:#3E4A41;--mist:#F2F4F1;--paper:#FFFFFF;--ink:#262B27;--mut:#68706A;--line:#E1E5E0;--gold:#A98B4F}
+*{box-sizing:border-box;margin:0;padding:0}
+.dk{width:1440px;position:relative;background:var(--paper);color:var(--ink);font-family:'Mulish',sans-serif;font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.dk .cap{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.dk h2{font-family:'Cormorant',serif;font-weight:600;font-size:60px;line-height:1.02;color:var(--sage-dk)}
+.dk .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:13.5px;letter-spacing:.12em;text-transform:uppercase;padding:17px 30px;white-space:nowrap}
+.dk .btn.s{background:var(--sage-dk);color:#fff}
+.dk .btn.l{border:1px solid var(--sage-dk);color:var(--sage-dk);padding:16px 29px}
+.dk .btn.w{background:#fff;color:var(--sage-dk)}
+.dk .ph{border-bottom:1px dashed #AEB5AE;color:var(--mut);white-space:nowrap}
+.dk .sh{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:50px}
+.dk .sh h2{margin-top:14px}
+.dk .sh p{max-width:400px;color:var(--mut)}
+.dk header{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:28px 80px;border-bottom:1px solid var(--line)}
+.dk header nav{display:flex;gap:32px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--sage-dk)}
+.dk header nav.r{justify-content:flex-end;align-items:center}
+.dk .logo{text-align:center;line-height:1}
+.dk .logo b{font-family:'Cormorant';font-weight:600;font-size:40px;color:var(--sage-dk);letter-spacing:.02em;display:block}
+.dk .logo small{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.dk .hero{display:grid;grid-template-columns:.9fr 1.1fr;min-height:760px}
+.dk .hero .txt{padding:110px 70px 70px 80px;display:flex;flex-direction:column}
+.dk .hero h1{font-family:'Cormorant';font-weight:600;font-size:76px;line-height:1;color:var(--sage-dk);margin:22px 0 24px}
+.dk .hero p{font-size:18.5px;color:#4A524C;max-width:480px}
+.dk .hero .ctas{display:flex;gap:12px;margin-top:38px}
+.dk .hero .facts{margin-top:auto;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.dk .hero .facts div{padding:20px 12px 0 0}
+.dk .hero .facts b{display:block;font-family:'Cormorant';font-weight:600;font-size:30px;color:var(--sage-dk);line-height:1.1}
+.dk .hero .facts span{font-size:13.5px;color:var(--mut)}
+.dk .hero .pic{background:url(img/w-fleurs.jpg) center 40%/cover}
+.dk .conf{background:var(--mist);padding:110px 80px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.dk .cf{background:#fff;padding:34px;border:1px solid var(--line)}
+.dk .cf h3{font-family:'Cormorant';font-weight:600;font-size:32px;color:var(--sage-dk)}
+.dk .cf .lbl{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--mut);margin:22px 0 10px}
+.dk .cf .opts{display:flex;gap:8px;flex-wrap:wrap}
+.dk .cf .opts span{border:1px solid var(--line);padding:9px 16px;font-size:14.5px}
+.dk .cf .opts span.on{border-color:var(--sage-dk);background:var(--sage-dk);color:#fff}
+.dk .cf .tot{display:flex;justify-content:space-between;align-items:baseline;margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}
+.dk .cf .tot b{font-family:'Cormorant';font-weight:700;font-size:42px;color:var(--sage-dk)}
+.dk .cf .tot small{color:var(--mut)}
+.dk .cf .btn{width:100%;margin-top:18px}
+.dk .conf .pic{height:640px;background:url(img/w-pivoines.jpg) center/cover}
+.dk .coll{padding:110px 80px}
+.dk .cg{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.dk .cc .pic{height:400px;background-size:cover;background-position:center}
+.dk .cc h3{font-family:'Cormorant';font-weight:600;font-size:28px;color:var(--sage-dk);margin-top:16px}
+.dk .cc p{font-size:14.5px;color:var(--mut)}
+.dk .cc .pr{margin-top:6px;font-size:14px;font-weight:700;color:var(--gold)}
+.dk .deg{display:grid;grid-template-columns:1fr 1fr;background:var(--sage-dk);color:#fff}
+.dk .deg .pic{background:url(img/w-lisser.jpg) center/cover;min-height:600px}
+.dk .deg .txt{padding:100px 80px}
+.dk .deg .cap{color:#D8C7A0}
+.dk .deg h2{color:#fff;margin:14px 0 20px}
+.dk .deg p{color:#CDD5CF}
+.dk .deg ol{list-style:none;margin:28px 0 34px;display:grid;gap:14px}
+.dk .deg li{display:grid;grid-template-columns:40px 1fr;gap:12px}
+.dk .deg li b{font-family:'Cormorant';font-weight:700;font-size:26px;color:#D8C7A0;line-height:1}
+.dk .saveurs{padding:110px 80px;display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.dk .sv{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.dk .sv div{padding:16px 0;border-bottom:1px solid var(--line)}
+.dk .sv b{display:block;font-family:'Cormorant';font-weight:600;font-size:24px;color:var(--sage-dk)}
+.dk .sv span{font-size:14.5px;color:var(--mut)}
+.dk .gal{display:grid;grid-template-columns:1fr 1.3fr 1fr 1fr;grid-template-rows:280px 280px;gap:10px;padding:0 80px 110px}
+.dk .gal div{background-size:cover;background-position:center}
+.dk .gal .t{grid-row:span 2}
+.dk .contact{background:var(--mist);padding:100px 80px;display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
+.dk .contact dl{margin-top:26px;display:grid;grid-template-columns:auto 1fr;gap:12px 28px;font-size:15.5px}
+.dk .contact dt{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700;padding-top:3px}
+.dk .form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dk .field{background:#fff;border:1px solid var(--line);padding:12px 14px;font-size:14.5px;color:var(--mut)}
+.dk .field b{display:block;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--sage-dk);margin-bottom:3px}
+.dk .form .full{grid-column:1/-1}
+.dk footer{padding:30px 80px 36px;display:flex;justify-content:space-between;font-size:13px;color:var(--mut)}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FFFFFF;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.dk{overflow:hidden}
+/* ===== version mobile ===== */
+:root{--bg:#FFFFFF;--fg:#262B27;--soft:#4A524C;--mut:#68706A;--line:#E1E5E0;--accent:#A98B4F;--onaccent:#fff;--panel:#fff;--btnbg:#3E4A41;--btnfg:#fff;--stickybg:rgba(255,255,255,.97);--disp:"Cormorant",serif;--dw:600;--body:"Mulish",sans-serif;--emstyle:normal;--rad:0;--avr:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg)}
+.mb{color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.mb .p{padding:0 20px}
+.mb .cap{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);font-weight:500}
+.mb h2{font-family:var(--disp);font-weight:var(--dw);font-size:38px;line-height:1.08;margin-top:12px}
+.mb h2 em{font-style:var(--emstyle);color:var(--accent)}
+.mb .btn{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:500;font-size:14px;letter-spacing:.06em;padding:15px 18px;white-space:nowrap;border-radius:var(--rad)}
+.mb .btn.a{background:var(--btnbg);color:var(--btnfg)}
+.mb .btn.o{border:1px solid var(--fg);padding:14px 17px}
+.mb .ph{border-bottom:1px dashed var(--mut);color:var(--mut);white-space:nowrap}
+.mb section{position:relative}
+.mb header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
+.mb header .r{display:flex;gap:10px;align-items:center}
+.mb header .btn{padding:10px 14px;font-size:12.5px}
+.mb .burger{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}
+.mb .burger svg{width:18px;height:18px}
+.mb .hero{padding:26px 0 0}
+.mb .hero h1{font-family:var(--disp);font-weight:var(--dw);font-size:46px;line-height:1.05;margin:14px 0 14px}
+.mb .hero h1 em{font-style:var(--emstyle);color:var(--accent)}
+.mb .hero p{color:var(--soft);font-size:16px}
+.mb .hero .img{height:330px;margin-top:24px;background-size:cover;background-position:center}
+.mb .book{margin:0 20px;border:1px solid var(--line);padding:16px;background:var(--panel);transform:translateY(-36px)}
+.mb .book .f{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:6px;margin:10px 0 12px}
+.mb .book .f div{border:1px solid var(--line);padding:7px 10px}
+.mb .book .f b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:18px}
+.mb .book .note{font-size:12px;color:var(--mut);margin-top:10px}
+.mb .blk{padding:14px 20px 44px}
+.mb .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.mb .row b{display:block;font-weight:500;font-size:15.5px;line-height:1.3}
+.mb .row small{display:block;color:var(--mut);font-size:13px}
+.mb .row .pr{font-family:var(--disp);font-size:18px;white-space:nowrap}
+.mb .illu{font-size:12px;color:var(--mut);margin-top:12px}
+.mb .rail{display:flex;gap:12px;overflow:hidden;padding:22px 20px 0}
+.mb .rail .c{flex:none;width:240px}
+.mb .rail .c .im{height:260px;background-size:cover;background-position:center}
+.mb .rail .c h3{font-family:var(--disp);font-weight:var(--dw);font-size:24px;margin-top:12px;line-height:1.1}
+.mb .rail .c p{font-size:13.5px;color:var(--mut);margin-top:4px}
+.mb .dots{display:flex;gap:6px;justify-content:center;margin-top:20px}
+.mb .dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
+.mb .dots i.on{width:20px;border-radius:6px;background:var(--accent)}
+.mb .mem{display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.mb .mem .av{width:72px;height:72px;background-size:cover;background-position:center 30%;border-radius:var(--avr)}
+.mb .mem h3{font-family:var(--disp);font-weight:var(--dw);font-size:22px;line-height:1.1}
+.mb .mem p{font-size:13.5px;color:var(--mut)}
+.mb .today{margin-top:18px;border:1px solid var(--accent);padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.mb .today b{font-family:var(--disp);font-weight:var(--dw);font-size:20px;display:block;line-height:1.1}
+.mb .today span{font-size:13px;color:var(--soft)}
+.mb .today em{font-style:normal;background:var(--accent);color:var(--onaccent);font-size:11px;font-weight:600;letter-spacing:.06em;padding:4px 9px}
+.mb .hrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.mb .map{margin-top:20px;height:220px;border:1px solid var(--line);overflow:hidden}
+.mb .map svg{width:100%;height:100%}
+.mb .two{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.mb .final{padding:60px 20px 54px;text-align:center;border-top:1px solid var(--line)}
+.mb .final h2{font-size:40px}
+.mb .final p{color:var(--soft);margin:12px 0 22px}
+.mb footer{border-top:1px solid var(--line);padding:30px 20px 120px;color:var(--mut);font-size:13.5px}
+.mb footer .links{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;margin:18px 0;color:var(--fg)}
+.mb footer .sm{font-size:11.5px;border-top:1px solid var(--line);padding-top:12px;display:flex;justify-content:space-between}
+.mb .sticky{width:390px;padding:12px 16px 26px;background:var(--stickybg);border-top:1px solid var(--line);display:grid;grid-template-columns:52px 1fr;gap:10px}
+.mb .sticky .call{width:52px;height:52px;border:1px solid var(--fg);border-radius:50%;display:grid;place-items:center}
+.mb .sticky .call svg{width:20px;height:20px}
+.mb .rm{display:grid;grid-template-columns:80px 1fr auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.mb .rm .th{width:80px;height:68px;background-size:cover;background-position:center;border-radius:var(--avr)}
+.mb .rm b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:18px;line-height:1.15}
+.mb .rm small{display:block;font-size:13px;color:var(--mut)}
+.mb .rm .pr{font-family:var(--disp);font-weight:var(--dw);font-size:17px;white-space:nowrap}
+.mb .opts{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 12px}
+.mb .opts span{border:1px solid var(--line);padding:7px 12px;font-size:13.5px;border-radius:var(--avr)}
+.mb .opts span.on{background:var(--btnbg);border-color:var(--btnbg);color:#fff}
+.mb .today em{font-size:0}
+.mb .today em::after{content:"Ouvert";font-size:11px}
+.mb .btn{text-transform:uppercase;letter-spacing:.12em;font-size:12.5px}
+.mb .hero h1,.mb h2{font-size:44px}
+.mb #m-rail{background:#F2F4F1}
+.mb .cap{color:#A98B4F;font-weight:700}
+
+.mb .rail{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-right:20px}
+.mb .rail::-webkit-scrollbar{display:none}
+.mb .rail .c{scroll-snap-align:start;scroll-margin-left:20px}
+.mb .sticky{position:fixed;left:0;right:0;bottom:0;width:auto;z-index:20;padding-bottom:max(16px,env(safe-area-inset-bottom))}
+
+.mb{display:none}
+@media (max-width:760px){.dk{display:none}.mb{display:block}}
+</style>
+</head>
+<body>
+<div class="dk">
+
+<header>
+  <nav><a href="#collections">Collections</a><a href="#saveurs">Saveurs</a><a href="#degustation">Dégustation</a></nav>
+  <div class="logo"><b>Atelier Céleste</b><small>Wedding cakes · Bordeaux</small></div>
+  <nav class="r"><a href="#contact">Contact</a><span class="btn s" style="padding:12px 20px;font-size:12px">Réserver une dégustation</span></nav>
+</header>
+<section class="hero">
+  <div class="txt"><span class="cap">Wedding cakes et pièces montées sur mesure</span>
+    <h1>Wedding cakes sur mesure à Bordeaux</h1>
+    <p>Gâteaux de mariage dessinés pour votre réception, de 30 à 250 parts. Dégustation à l’atelier, livraison et installation sur le lieu.</p>
+    <div class="ctas"><span class="btn s">Réserver une dégustation</span><span class="btn l">Estimer mon gâteau</span></div>
+    <div class="facts"><div><b>30 à 250</b><span>parts</span></div><div><b>dès 7 €</b><span>la part</span></div><div><b>Gironde</b><span>livraison et installation</span></div></div></div>
+  <div class="pic"></div>
+</section>
+
+<section class="conf">
+  <div class="cf"><span class="cap">Estimation</span><h3>Estimez votre wedding cake</h3>
+    <div class="lbl">Nombre de parts</div><div class="opts"><span>50</span><span class="on">80</span><span>120</span><span>180</span></div>
+    <div class="lbl">Étages</div><div class="opts"><span>2</span><span class="on">3</span><span>4</span></div>
+    <div class="lbl">Décor</div><div class="opts"><span>Épuré</span><span class="on">Fleurs fraîches</span><span>Fleurs en sucre</span><span>Fruits</span></div>
+    <div class="tot"><small>Estimation indicative</small><b>dès 640 €</b></div>
+    <span class="btn s">Demander un devis précis</span></div>
+  <div class="pic"></div>
+</section>
+
+<section id="collections" class="coll">
+  <div class="sh"><div><span class="cap">Collections</span><h2>Quatre styles, adaptés à votre mariage</h2></div><p>Photos d’illustration. Chaque gâteau est dessiné pour vous.</p></div>
+  <div class="cg">
+    <div class="cc"><div class="pic" style="background-image:url(img/w-simple.jpg)"></div><h3>Épuré</h3><p>Crème lissée, une seule fleur.</p><div class="pr">dès 7 € la part</div></div>
+    <div class="cc"><div class="pic" style="background-image:url(img/w-jardin.jpg)"></div><h3>Champêtre</h3><p>Fleurs fraîches et verdure.</p><div class="pr">dès 8 € la part</div></div>
+    <div class="cc"><div class="pic" style="background-image:url(img/w-classique.jpg)"></div><h3>Classique</h3><p>Dentelle de crème, étages hauts.</p><div class="pr">dès 8,50 € la part</div></div>
+    <div class="cc"><div class="pic" style="background-image:url(img/w-fruits.jpg)"></div><h3>Gourmand</h3><p>Fruits de saison, effet naked.</p><div class="pr">dès 7,50 € la part</div></div>
+  </div>
+</section>
+
+<section id="degustation" class="deg">
+  <div class="pic"></div>
+  <div class="txt"><span class="cap">Dégustation</span><h2>Goûtez avant de choisir</h2>
+    <p>Une heure à l’atelier pour goûter 4 saveurs et dessiner votre gâteau ensemble.</p>
+    <ol><li><b>1</b><span>Réservez un créneau, le samedi matin ou en semaine</span></li><li><b>2</b><span>Dégustation de 4 saveurs et croquis du gâteau</span></li><li><b>3</b><span>Devis sous 48 h, déduit si vous commandez</span></li></ol>
+    <span class="btn w">Réserver une dégustation · 35 €</span></div>
+</section>
+
+<section id="saveurs" class="saveurs">
+  <div><span class="cap">Saveurs</span><h2 style="margin-top:14px">Huit saveurs au choix</h2><p style="color:var(--mut);margin-top:16px">Un parfum différent par étage si vous le souhaitez. Allergènes détaillés sur demande.</p></div>
+  <div class="sv">
+    <div><b>Vanille et fruits rouges</b><span>génoise, crème légère</span></div><div><b>Citron et framboise</b><span>biscuit, crémeux citron</span></div>
+    <div><b>Chocolat et praliné</b><span>croustillant noisette</span></div><div><b>Pistache et griotte</b><span>biscuit pistache</span></div>
+    <div><b>Mangue et passion</b><span>mousse exotique</span></div><div><b>Caramel beurre salé</b><span>pomme rôtie</span></div>
+    <div><b>Fraise et basilic</b><span>en saison</span></div><div><b>Café et noisette</b><span>dacquoise</span></div>
+  </div>
+</section>
+
+<section class="gal">
+  <div class="t" style="background-image:url(img/w-dehors.jpg)"></div>
+  <div style="background-image:url(img/w-bar.jpg)"></div>
+  <div style="background-image:url(img/w-coupe.jpg)"></div>
+  <div class="t" style="background-image:url(img/w-noir.jpg)"></div>
+  <div style="background-image:url(img/w-deco.jpg)"></div>
+  <div style="background-image:url(img/w-bois.jpg)"></div>
+</section>
+
+<section id="contact" class="contact">
+  <div><span class="cap">Contact</span><h2 style="margin-top:14px">Votre date est-elle disponible ?</h2>
+    <p style="color:var(--mut);margin-top:14px">Nous réalisons un nombre limité de gâteaux par week-end. Réponse sous 48 h.</p>
+    <dl><dt>Atelier</dt><dd><span class="ph">[Adresse], 33000 Bordeaux</span></dd><dt>Téléphone</dt><dd><span class="ph">[05 00 00 00 00]</span></dd><dt>Zone</dt><dd>Gironde, autres départements sur devis</dd></dl></div>
+  <div class="form">
+    <div class="field"><b>Date du mariage</b>jj / mm / aaaa</div><div class="field"><b>Lieu</b>Ville ou domaine</div>
+    <div class="field"><b>Nombre de parts</b>environ ..</div><div class="field"><b>Style</b>Épuré · Champêtre · Classique · Gourmand</div>
+    <div class="field full" style="height:110px"><b>Votre idée</b>Couleurs, fleurs, saveurs…</div>
+    <span class="btn s full">Envoyer ma demande</span></div>
+</section>
+<footer><span>© Atelier Céleste · Mentions légales · Allergènes</span><span>[@compte-instagram]</span><span>Maquette — entreprise fictive · informations illustratives</span></footer>
+
+</div>
+<div class="mb">
+
+<header id="mb-head"><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Cormorant;font-weight:600;font-size:27px;color:#3E4A41">Atelier Céleste</span><span style="font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:#A98B4F;font-weight:700;margin-top:3px">Wedding cakes</span></span><div class="r"><span class="btn a">Réserver</span><span class="burger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 9h16M4 15h16"/></svg></span></div></header>
+<section class="hero" id="mb-hero">
+  <div class="p"><div class="cap">Wedding cakes · Bordeaux</div><h1>Wedding cakes sur mesure à Bordeaux</h1><p>De 30 à 250 parts. Dégustation à l’atelier, livraison et installation.</p></div>
+  <div class="img" style="background-image:url(img/w-fleurs.jpg)"></div>
+  <div class="book"><div class="cap">Estimez votre gâteau</div><div class="opts"><span>50</span><span class="on">80 parts</span><span>120</span></div><div class="opts" style="margin-top:0"><span>2 étages</span><span class="on">3 étages</span><span>4</span></div><span class="btn a">Estimation : dès 640 €</span><p class="note">Estimation indicative, devis précis sous 48 h.</p></div>
+</section>
+<section class="blk" id="mb-sig"><div class="cap">Collections</div><h2>Quatre styles</h2><div style="margin-top:10px"><div class="rm"><div class="th" style="background-image:url(img/w-simple.jpg)"></div><div><b>Épuré</b><small>crème lissée, une fleur</small></div><span class="pr">dès 7 €</span></div><div class="rm"><div class="th" style="background-image:url(img/w-jardin.jpg)"></div><div><b>Champêtre</b><small>fleurs fraîches</small></div><span class="pr">dès 8 €</span></div><div class="rm"><div class="th" style="background-image:url(img/w-classique.jpg)"></div><div><b>Classique</b><small>dentelle de crème</small></div><span class="pr">dès 8,50 €</span></div><div class="rm"><div class="th" style="background-image:url(img/w-fruits.jpg)"></div><div><b>Gourmand</b><small>fruits, effet naked</small></div><span class="pr">dès 7,50 €</span></div></div><p class="illu">Prix par part, indicatifs.</p></section>
+<section id="mb-rail" style="padding:44px 0 44px;"><div class="p"><div class="cap">Saveurs</div><h2>Huit saveurs au choix</h2></div><div class="rail" data-rail><div class="c"><div class="im" style="background-image:url(img/w-coupe.jpg)"></div><h3>Vanille et fruits rouges</h3><p>Génoise, crème légère.</p></div><div class="c"><div class="im" style="background-image:url(img/w-pivoines.jpg)"></div><h3>Citron et framboise</h3><p>Crémeux citron.</p></div><div class="c"><div class="im" style="background-image:url(img/w-noir.jpg)"></div><h3>Chocolat et praliné</h3><p>Croustillant noisette.</p></div></div><div class="dots" data-dots><i class="on"></i><i></i><i></i></div></section>
+<section class="blk" id="mb-team" style="padding-top:44px"><div class="cap">Dégustation</div><h2>Goûtez avant de choisir</h2><div class="hero" style="padding:0"><div class="img" style="height:200px;margin-top:16px;background-image:url(img/w-lisser.jpg)"></div></div><div class="row"><div><b>Réservez un créneau</b><small>samedi matin ou en semaine</small></div><span class="pr">1</span></div><div class="row"><div><b>4 saveurs et croquis</b><small>une heure à l’atelier</small></div><span class="pr">2</span></div><div class="row"><div><b>Devis sous 48 h</b><small>dégustation déduite</small></div><span class="pr">35 €</span></div></section>
+<section class="blk" id="mb-infos" style="padding-top:20px"><div class="cap">Contact</div><h2>Votre date est-elle disponible ?</h2><div class="row"><div><b>Atelier</b><small><span class="ph">[Adresse], 33000 Bordeaux</span></small></div><span class="pr"></span></div><div class="row"><div><b>Zone</b><small>Gironde, autres sur devis</small></div><span class="pr"></span></div><div class="row"><div><b>Téléphone</b><small><span class="ph">[05 00 00 00 00]</span></small></div><span class="pr"></span></div><div class="two"><span class="btn a">Écrire</span><span class="btn o">Appeler</span></div></section>
+<section class="final" id="mb-final"><div class="cap">Saison 2027</div><h2>Réservez votre dégustation</h2><p>Nombre limité de gâteaux par week-end.</p><span class="btn a">Réserver · 35 €</span></section>
+<footer id="mb-foot"><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Cormorant;font-weight:600;font-size:27px;color:#3E4A41">Atelier Céleste</span><span style="font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:#A98B4F;font-weight:700;margin-top:3px">Wedding cakes</span></span><p style="margin-top:10px">Wedding cakes et pièces montées sur mesure, Bordeaux.</p><div class="links"><span>Collections</span><span>Saveurs</span><span>Dégustation</span><span>Contact</span><span>Allergènes</span><span>Mentions légales</span></div><div class="sm"><span>[05 00 00 00 00]</span><span>Maquette — restaurant fictif</span></div></footer>
+<div class="sticky" id="sticky"><span class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span class="btn a">Réserver une dégustation</span></div>
+
+</div>
+<script>
+  // la maquette ordinateur est dessinée sur 1440 px : on la met à l'échelle de la fenêtre
+  const dk = document.querySelector('.dk');
+  let lastW = 0;
+  function fit() {
+    const w = document.documentElement.clientWidth;
+    if (w === lastW) return;
+    lastW = w;
+    dk.style.zoom = w > 760 ? w / 1440 : '';
+  }
+  addEventListener('resize', fit); setInterval(fit, 300); fit();
+
+  // points du carrousel (mobile)
+  const rail = document.querySelector('.mb [data-rail]');
+  const dots = [...document.querySelectorAll('.mb [data-dots] i')];
+  rail.addEventListener('scroll', () => {
+    const i = Math.round(rail.scrollLeft / (rail.scrollWidth - rail.clientWidth) * (dots.length - 1));
+    dots.forEach((d, k) => d.classList.toggle('on', k === i));
+  }, { passive: true });
+</script>
+</body>
+</html>

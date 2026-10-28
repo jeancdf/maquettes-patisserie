@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Les Douceurs de Nour — pâtisseries orientales, Marseille (maquette)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Nunito:wght@400..700&display=swap">
+<style>
+/* ===== version ordinateur (maquette 1440 px, mise à l'échelle) ===== */
+:root{--night:#1C2541;--night2:#26325A;--gold:#C9A14A;--pista:#7E9B57;--ivory:#F6F3EC;--paper:#FFFFFF;--ink:#1E2236;--mut:#5E6377;--line:#E4E1D8}
+*{box-sizing:border-box;margin:0;padding:0}
+.dk{width:1440px;position:relative;background:var(--paper);color:var(--ink);font-family:'Nunito',sans-serif;font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.dk .cap{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.dk h2{font-family:'Amiri',serif;font-weight:700;font-size:56px;line-height:1.08;color:var(--night)}
+.dk .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:15px;padding:16px 26px;border-radius:999px;white-space:nowrap}
+.dk .btn.n{background:var(--night);color:#fff}
+.dk .btn.g{background:var(--gold);color:var(--night)}
+.dk .btn.l{border:1.5px solid currentColor;padding:14.5px 24.5px}
+.dk .ph{border-bottom:1px dashed #AFAFB8;color:var(--mut);white-space:nowrap}
+.dk .sh{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:46px}
+.dk .sh h2{margin-top:10px}
+.dk .sh p{max-width:400px;color:var(--mut)}
+.dk .pattern{height:22px;background:radial-gradient(circle at 11px 11px,var(--gold) 2.5px,transparent 3px) 0 0/22px 22px,var(--night)}
+.dk header{display:flex;align-items:center;justify-content:space-between;padding:22px 80px;background:var(--night);color:#fff}
+.dk .logo{display:flex;align-items:center;gap:14px}
+.dk .logo .star{width:46px;height:46px}
+.dk .logo b{font-family:'Amiri';font-weight:700;font-size:30px;display:block;line-height:1}
+.dk .logo small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D8C79A}
+.dk nav{display:flex;gap:32px;font-size:15px;font-weight:600}
+.dk .hero{display:grid;grid-template-columns:1fr 1fr;background:var(--night);color:#fff}
+.dk .hero .txt{padding:90px 70px 80px 80px}
+.dk .hero .cap{color:#D8C79A}
+.dk .hero h1{font-family:'Amiri';font-weight:700;font-size:70px;line-height:1.05;margin:18px 0 20px}
+.dk .hero p{font-size:19px;color:#CDD3E6}
+.dk .hero .ctas{display:flex;gap:12px;margin-top:34px}
+.dk .hero .facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:46px;border-top:1px solid #3A4672}
+.dk .hero .facts div{padding:18px 12px 0 0}
+.dk .hero .facts b{display:block;font-family:'Amiri';font-weight:700;font-size:30px;color:var(--gold);line-height:1.1}
+.dk .hero .facts span{font-size:14px;color:#AEB6CF}
+.dk .hero .pic{background:url(img/n-plateau.jpg) center/cover;min-height:700px;border-radius:0 0 0 200px}
+.dk .plateaux{padding:110px 80px}
+.dk .pg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.dk .pc{border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.dk .pc.hl{border:2px solid var(--gold)}
+.dk .pc .pic{height:260px;background-size:cover;background-position:center}
+.dk .pc .body{padding:24px 26px 26px}
+.dk .pc h3{font-family:'Amiri';font-weight:700;font-size:30px;color:var(--night);line-height:1.1}
+.dk .pc p{font-size:15px;color:var(--mut);margin-top:6px}
+.dk .pc .pr{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.dk .pc .pr b{font-family:'Amiri';font-weight:700;font-size:32px;color:var(--night)}
+.dk .pc .pr span{font-size:14px;color:var(--mut)}
+.dk .carte{background:var(--ivory);padding:110px 80px;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
+.dk .cg{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.dk .cg div{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.dk .cg b{font-weight:700;font-size:16.5px;display:block}
+.dk .cg small{font-size:13.5px;color:var(--mut)}
+.dk .cg span{font-family:'Amiri';font-weight:700;font-size:21px;white-space:nowrap;color:var(--night)}
+.dk .carte .pics{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:240px 240px;gap:10px}
+.dk .carte .pics div{border-radius:16px;background-size:cover;background-position:center}
+.dk .occ{display:grid;grid-template-columns:1fr 1fr;background:var(--night);color:#fff}
+.dk .occ .pic{background:url(img/n-the.jpg) center/cover;min-height:560px}
+.dk .occ .txt{padding:100px 80px}
+.dk .occ .cap{color:#D8C79A}
+.dk .occ h2{color:#fff;margin:12px 0 18px}
+.dk .occ p{color:#CDD3E6}
+.dk .occ .row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.dk .occ .row div{background:var(--night2);border-radius:16px;padding:18px}
+.dk .occ .row b{display:block;font-family:'Amiri';font-weight:700;font-size:24px;color:var(--gold)}
+.dk .occ .row span{font-size:14.5px;color:#CDD3E6}
+.dk .order{padding:110px 80px;display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
+.dk .steps{display:grid;gap:0;margin-top:24px}
+.dk .steps div{display:grid;grid-template-columns:52px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.dk .steps i{font-style:normal;width:40px;height:40px;border-radius:50%;background:var(--gold);color:var(--night);display:grid;place-items:center;font-weight:800}
+.dk .steps b{display:block;font-weight:700;font-size:17px}
+.dk .steps span{color:var(--mut);font-size:15px}
+.dk .form{background:var(--ivory);border-radius:22px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dk .form .full{grid-column:1/-1}
+.dk .field{background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-size:14.5px;color:var(--mut)}
+.dk .field b{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--night);margin-bottom:2px}
+.dk .gal{display:grid;grid-template-columns:1.2fr 1fr 1fr 1.2fr;grid-template-rows:250px 250px;gap:10px;padding:0 80px 110px}
+.dk .gal div{border-radius:16px;background-size:cover;background-position:center}
+.dk .gal .t{grid-row:span 2}
+.dk .infos{background:var(--ivory);padding:90px 80px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px}
+.dk .infos h3{font-family:'Amiri';font-weight:700;font-size:28px;color:var(--night);margin-bottom:10px}
+.dk .hrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.dk footer{background:var(--night);color:#AEB6CF;padding:28px 80px 34px;display:flex;justify-content:space-between;font-size:13.5px}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FFFFFF;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.dk{overflow:hidden}
+/* ===== version mobile ===== */
+:root{--bg:#FFFFFF;--fg:#1E2236;--soft:#3B4058;--mut:#5E6377;--line:#E4E1D8;--accent:#C9A14A;--onaccent:#1C2541;--panel:#fff;--btnbg:#1C2541;--btnfg:#fff;--stickybg:rgba(255,255,255,.97);--disp:"Amiri",serif;--dw:700;--body:"Nunito",sans-serif;--emstyle:normal;--rad:999px;--avr:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg)}
+.mb{color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.mb .p{padding:0 20px}
+.mb .cap{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);font-weight:500}
+.mb h2{font-family:var(--disp);font-weight:var(--dw);font-size:38px;line-height:1.08;margin-top:12px}
+.mb h2 em{font-style:var(--emstyle);color:var(--accent)}
+.mb .btn{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:500;font-size:14px;letter-spacing:.06em;padding:15px 18px;white-space:nowrap;border-radius:var(--rad)}
+.mb .btn.a{background:var(--btnbg);color:var(--btnfg)}
+.mb .btn.o{border:1px solid var(--fg);padding:14px 17px}
+.mb .ph{border-bottom:1px dashed var(--mut);color:var(--mut);white-space:nowrap}
+.mb section{position:relative}
+.mb header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
+.mb header .r{display:flex;gap:10px;align-items:center}
+.mb header .btn{padding:10px 14px;font-size:12.5px}
+.mb .burger{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}
+.mb .burger svg{width:18px;height:18px}
+.mb .hero{padding:26px 0 0}
+.mb .hero h1{font-family:var(--disp);font-weight:var(--dw);font-size:46px;line-height:1.05;margin:14px 0 14px}
+.mb .hero h1 em{font-style:var(--emstyle);color:var(--accent)}
+.mb .hero p{color:var(--soft);font-size:16px}
+.mb .hero .img{height:330px;margin-top:24px;background-size:cover;background-position:center}
+.mb .book{margin:0 20px;border:1px solid var(--line);padding:16px;background:var(--panel);transform:translateY(-36px)}
+.mb .book .f{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:6px;margin:10px 0 12px}
+.mb .book .f div{border:1px solid var(--line);padding:7px 10px}
+.mb .book .f b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:18px}
+.mb .book .note{font-size:12px;color:var(--mut);margin-top:10px}
+.mb .blk{padding:14px 20px 44px}
+.mb .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.mb .row b{display:block;font-weight:500;font-size:15.5px;line-height:1.3}
+.mb .row small{display:block;color:var(--mut);font-size:13px}
+.mb .row .pr{font-family:var(--disp);font-size:18px;white-space:nowrap}
+.mb .illu{font-size:12px;color:var(--mut);margin-top:12px}
+.mb .rail{display:flex;gap:12px;overflow:hidden;padding:22px 20px 0}
+.mb .rail .c{flex:none;width:240px}
+.mb .rail .c .im{height:260px;background-size:cover;background-position:center}
+.mb .rail .c h3{font-family:var(--disp);font-weight:var(--dw);font-size:24px;margin-top:12px;line-height:1.1}
+.mb .rail .c p{font-size:13.5px;color:var(--mut);margin-top:4px}
+.mb .dots{display:flex;gap:6px;justify-content:center;margin-top:20px}
+.mb .dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
+.mb .dots i.on{width:20px;border-radius:6px;background:var(--accent)}
+.mb .mem{display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.mb .mem .av{width:72px;height:72px;background-size:cover;background-position:center 30%;border-radius:var(--avr)}
+.mb .mem h3{font-family:var(--disp);font-weight:var(--dw);font-size:22px;line-height:1.1}
+.mb .mem p{font-size:13.5px;color:var(--mut)}
+.mb .today{margin-top:18px;border:1px solid var(--accent);padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.mb .today b{font-family:var(--disp);font-weight:var(--dw);font-size:20px;display:block;line-height:1.1}
+.mb .today span{font-size:13px;color:var(--soft)}
+.mb .today em{font-style:normal;background:var(--accent);color:var(--onaccent);font-size:11px;font-weight:600;letter-spacing:.06em;padding:4px 9px}
+.mb .hrow{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.mb .map{margin-top:20px;height:220px;border:1px solid var(--line);overflow:hidden}
+.mb .map svg{width:100%;height:100%}
+.mb .two{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.mb .final{padding:60px 20px 54px;text-align:center;border-top:1px solid var(--line)}
+.mb .final h2{font-size:40px}
+.mb .final p{color:var(--soft);margin:12px 0 22px}
+.mb footer{border-top:1px solid var(--line);padding:30px 20px 120px;color:var(--mut);font-size:13.5px}
+.mb footer .links{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;margin:18px 0;color:var(--fg)}
+.mb footer .sm{font-size:11.5px;border-top:1px solid var(--line);padding-top:12px;display:flex;justify-content:space-between}
+.mb .sticky{width:390px;padding:12px 16px 26px;background:var(--stickybg);border-top:1px solid var(--line);display:grid;grid-template-columns:52px 1fr;gap:10px}
+.mb .sticky .call{width:52px;height:52px;border:1px solid var(--fg);border-radius:50%;display:grid;place-items:center}
+.mb .sticky .call svg{width:20px;height:20px}
+.mb .rm{display:grid;grid-template-columns:80px 1fr auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.mb .rm .th{width:80px;height:68px;background-size:cover;background-position:center;border-radius:var(--avr)}
+.mb .rm b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:18px;line-height:1.15}
+.mb .rm small{display:block;font-size:13px;color:var(--mut)}
+.mb .rm .pr{font-family:var(--disp);font-weight:var(--dw);font-size:17px;white-space:nowrap}
+.mb .opts{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 12px}
+.mb .opts span{border:1px solid var(--line);padding:7px 12px;font-size:13.5px;border-radius:var(--avr)}
+.mb .opts span.on{background:var(--btnbg);border-color:var(--btnbg);color:#fff}
+.mb .today em{font-size:0}
+.mb .today em::after{content:"Ouvert";font-size:11px}
+.mb .cap{color:#A88533;font-weight:700}
+.mb #m-rail{background:#F6F3EC}
+.mb .pattern{height:16px;background:radial-gradient(circle at 8px 8px,#C9A14A 2px,transparent 2.5px) 0 0/16px 16px,#1C2541}
+
+.mb .rail{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-right:20px}
+.mb .rail::-webkit-scrollbar{display:none}
+.mb .rail .c{scroll-snap-align:start;scroll-margin-left:20px}
+.mb .sticky{position:fixed;left:0;right:0;bottom:0;width:auto;z-index:20;padding-bottom:max(16px,env(safe-area-inset-bottom))}
+
+.mb{display:none}
+@media (max-width:760px){.dk{display:none}.mb{display:block}}
+</style>
+</head>
+<body>
+<div class="dk">
+
+<header>
+  <div class="logo"><svg class="star" viewBox="0 0 46 46" fill="none" stroke="#C9A14A" stroke-width="1.6"><rect x="10" y="10" width="26" height="26"/><rect x="10" y="10" width="26" height="26" transform="rotate(45 23 23)"/><circle cx="23" cy="23" r="4" fill="#C9A14A"/></svg><div><b>Les Douceurs de Nour</b><small>Pâtisseries orientales · Marseille</small></div></div>
+  <nav><a href="#plateaux">Plateaux</a><a href="#carte">La carte</a><a href="#occasions">Occasions</a><a href="#commander">Commander</a><a href="#infos">Infos</a></nav>
+  <span class="btn g" style="padding:12px 22px">Commander</span>
+</header>
+<div class="pattern"></div>
+<section class="hero">
+  <div class="txt"><span class="cap">Fait maison · sur commande</span>
+    <h1>Pâtisseries orientales sur commande à Marseille</h1>
+    <p>Baklavas, cornes de gazelle, makrouts et plateaux assortis pour vos fêtes, mariages et réceptions. Commande 48 h à l’avance.</p>
+    <div class="ctas"><span class="btn g">Commander un plateau</span><span class="btn l" style="color:#fff">Voir la carte</span></div>
+    <div class="facts"><div><b>48 h</b><span>délai de commande</span></div><div><b>dès 0,90 €</b><span>la pièce</span></div><div><b>Marseille</b><span>retrait ou livraison</span></div></div></div>
+  <div class="pic"></div>
+</section>
+
+<section id="plateaux" class="plateaux">
+  <div class="sh"><div><span class="cap">Plateaux assortis</span><h2>Trois plateaux, prêts à servir</h2></div><p>Assortiment de 6 à 10 variétés selon le plateau. Prix indicatifs.</p></div>
+  <div class="pg">
+    <div class="pc"><div class="pic" style="background-image:url(img/n-pistache.jpg)"></div><div class="body"><h3>Plateau découverte</h3><p>30 pièces, 6 variétés. Pour 6 à 8 personnes.</p><div class="pr"><span>30 pièces</span><b>29 €</b></div></div></div>
+    <div class="pc hl"><div class="pic" style="background-image:url(img/n-baklava.jpg)"></div><div class="body"><h3>Plateau fête</h3><p>60 pièces, 8 variétés. Pour 12 à 15 personnes.</p><div class="pr"><span>60 pièces</span><b>55 €</b></div></div></div>
+    <div class="pc"><div class="pic" style="background-image:url(img/n-plaques.jpg)"></div><div class="body"><h3>Plateau réception</h3><p>120 pièces, 10 variétés. Pour 25 à 30 personnes.</p><div class="pr"><span>120 pièces</span><b>105 €</b></div></div></div>
+  </div>
+</section>
+
+<section id="carte" class="carte">
+  <div><span class="cap">La carte</span><h2 style="margin:10px 0 26px">À la pièce ou au kilo</h2>
+    <div class="cg">
+      <div><span style="font-family:Nunito;font-size:16px;color:var(--ink)"><b>Baklava pistache</b><small>pâte filo, miel</small></span><span>1,10 €</span></div>
+      <div><span style="font-family:Nunito;font-size:16px;color:var(--ink)"><b>Corne de gazelle</b><small>amande, fleur d’oranger</small></span><span>1,00 €</span></div>
+      <div><span style="font-family:Nunito;font-size:16px;color:var(--ink)"><b>Makrout</b><small>semoule, datte</small></span><span>0,90 €</span></div>
+      <div><span style="font-family:Nunito;font-size:16px;color:var(--ink)"><b>Ktaïf</b><small>cheveux d’ange, noix</small></span><span>1,20 €</span></div>
+      <div><span style="font-family:Nunito;font-size:16px;color:var(--ink)"><b>Ghribia</b><small>sablé fondant</small></span><span>0,90 €</span></div>
+      <div><span style="font-family:Nunito;font-size:16px;color:var(--ink)"><b>Mhancha</b><small>à la part</small></span><span>3,50 €</span></div>
+      <div><span style="font-family:Nunito;font-size:16px;color:var(--ink)"><b>Assortiment au kilo</b><small>mélange maison</small></span><span>38 € / kg</span></div>
+      <div><span style="font-family:Nunito;font-size:16px;color:var(--ink)"><b>Boîte cadeau</b><small>16 pièces</small></span><span>18 €</span></div>
+    </div>
+    <p style="font-size:13.5px;color:var(--mut);margin-top:16px">Prix indicatifs. Contient des fruits à coque : liste des allergènes sur demande.</p></div>
+  <div class="pics"><div style="background-image:url(img/n-noix.jpg)"></div><div style="background-image:url(img/n-piece.jpg)"></div><div style="background-image:url(img/n-rangs.jpg)"></div><div style="background-image:url(img/n-boite.jpg)"></div></div>
+</section>
+
+<section id="occasions" class="occ">
+  <div class="pic"></div>
+  <div class="txt"><span class="cap">Occasions</span><h2>Pour vos fêtes et réceptions</h2>
+    <p>Mariages, fiançailles, naissances, fêtes de fin d’année ou de l’Aïd : nous préparons les quantités et la présentation pour votre événement.</p>
+    <div class="row"><div><b>Mariages</b><span>pièces sur devis, présentation en pyramide</span></div><div><b>Entreprises</b><span>boîtes cadeaux personnalisées</span></div><div><b>Fêtes religieuses</b><span>commandes à anticiper 2 semaines avant</span></div><div><b>Thé à la menthe</b><span>service possible pour vos réceptions</span></div></div></div>
+</section>
+
+<section id="commander" class="order">
+  <div><span class="cap">Commander</span><h2 style="margin-top:10px">Commander en 3 étapes</h2>
+    <div class="steps"><div><i>1</i><span><b>Choisissez</b>Plateau, pièces à l’unité ou au kilo.</span></div><div><i>2</i><span><b>Indiquez la date</b>48 h minimum, 2 semaines en période de fête.</span></div><div><i>3</i><span><b>Retrait ou livraison</b>À la boutique ou livré dans Marseille.</span></div></div></div>
+  <div class="form">
+    <div class="field"><b>Plateau</b>Fête · 60 pièces</div><div class="field"><b>Quantité</b>2</div>
+    <div class="field"><b>Date</b>jj / mm</div><div class="field"><b>Retrait ou livraison</b>Retrait</div>
+    <div class="field full"><b>Précisions</b>Variétés préférées, allergies, message…</div>
+    <span class="btn n full">Envoyer ma commande</span></div>
+</section>
+
+<section class="gal">
+  <div class="t" style="background-image:url(img/n-table.jpg)"></div><div style="background-image:url(img/n-sirop.jpg)"></div><div style="background-image:url(img/n-assiette.jpg)"></div><div class="t" style="background-image:url(img/n-theieres.jpg)"></div><div style="background-image:url(img/n-feuilles.jpg)"></div><div style="background-image:url(img/n-verres.jpg)"></div>
+</section>
+
+<section id="infos" class="infos">
+  <div><h3>Horaires</h3>
+    <div class="hrow"><span>Mardi → samedi</span><span>9 h – 19 h</span></div>
+    <div class="hrow"><span>Dimanche</span><span>9 h – 13 h</span></div>
+    <div class="hrow"><span>Lundi</span><span>Fermé</span></div></div>
+  <div><h3>Boutique et retrait</h3><p><span class="ph">[Adresse de la boutique]</span><br><span class="ph">130XX Marseille</span></p><p style="margin-top:10px;color:var(--mut)">Livraison dans Marseille : 8 €, offerte dès 80 €.</p></div>
+  <div><h3>Contact</h3><p><span class="ph">[04 00 00 00 00]</span><br><span class="ph">[commande@douceursdenour.fr]</span></p><span class="btn n" style="margin-top:18px">Commander</span></div>
+</section>
+<div class="pattern"></div>
+<footer><span>© Les Douceurs de Nour · Mentions légales · Allergènes</span><span>Maquette — entreprise fictive · informations illustratives</span></footer>
+
+</div>
+<div class="mb">
+
+<header id="mb-head"><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Amiri;font-weight:700;font-size:23px;color:#1C2541">Les Douceurs de Nour</span><span style="font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#A88533;font-weight:700;margin-top:3px">Pâtisseries orientales</span></span><div class="r"><span class="btn a">Réserver</span><span class="burger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 9h16M4 15h16"/></svg></span></div></header>
+<section class="hero" id="mb-hero">
+  <div class="p"><div class="cap">Fait maison · Marseille</div><h1>Pâtisseries orientales sur commande à Marseille</h1><p>Baklavas, cornes de gazelle, makrouts et plateaux assortis. Commande 48 h avant.</p></div>
+  <div class="img" style="background-image:url(img/n-plateau.jpg)"></div>
+  <div class="book"><div class="cap">Commander un plateau</div><div class="opts"><span>30 pièces</span><span class="on">60 pièces</span><span>120</span></div><span class="btn a">Commander · 55 €</span><p class="note">Retrait en boutique ou livraison dans Marseille.</p></div>
+</section>
+<section class="blk" id="mb-sig"><div class="pattern" style="margin:0 -20px 26px"></div><div class="cap">Plateaux assortis</div><h2>Trois plateaux</h2><div style="margin-top:10px"><div class="rm"><div class="th" style="background-image:url(img/n-pistache.jpg)"></div><div><b>Découverte</b><small>30 pièces · 6 à 8 pers.</small></div><span class="pr">29 €</span></div><div class="rm"><div class="th" style="background-image:url(img/n-baklava.jpg)"></div><div><b>Fête</b><small>60 pièces · 12 à 15 pers.</small></div><span class="pr">55 €</span></div><div class="rm"><div class="th" style="background-image:url(img/n-plaques.jpg)"></div><div><b>Réception</b><small>120 pièces · 25 à 30 pers.</small></div><span class="pr">105 €</span></div></div><div class="cap" style="margin-top:26px">À la pièce</div><div class="row"><div><b>Baklava pistache</b><small>pâte filo, miel</small></div><span class="pr">1,10 €</span></div><div class="row"><div><b>Corne de gazelle</b><small>amande</small></div><span class="pr">1,00 €</span></div><div class="row"><div><b>Makrout</b><small>semoule, datte</small></div><span class="pr">0,90 €</span></div><div class="row"><div><b>Assortiment au kilo</b></div><span class="pr">38 € / kg</span></div><p class="illu">Prix indicatifs. Contient des fruits à coque.</p></section>
+<section id="mb-rail" style="padding:44px 0 44px;"><div class="p"><div class="cap">Occasions</div><h2>Pour vos fêtes</h2></div><div class="rail" data-rail><div class="c"><div class="im" style="background-image:url(img/n-the.jpg)"></div><h3>Mariages</h3><p>Présentation en pyramide.</p></div><div class="c"><div class="im" style="background-image:url(img/n-boite.jpg)"></div><h3>Boîtes cadeaux</h3><p>Pour les entreprises.</p></div><div class="c"><div class="im" style="background-image:url(img/n-table.jpg)"></div><h3>Réceptions</h3><p>Thé à la menthe possible.</p></div></div><div class="dots" data-dots><i class="on"></i><i></i><i></i></div></section>
+<section class="blk" id="mb-team" style="padding-top:44px"><div class="cap">Commander</div><h2>En 3 étapes</h2><div class="row"><div><b>Choisissez</b><small>plateau, pièce ou kilo</small></div><span class="pr">1</span></div><div class="row"><div><b>Indiquez la date</b><small>48 h minimum</small></div><span class="pr">2</span></div><div class="row"><div><b>Retrait ou livraison</b><small>boutique ou Marseille</small></div><span class="pr">3</span></div></section>
+<section class="blk" id="mb-infos" style="padding-top:20px"><div class="cap">Infos pratiques</div><h2>La boutique</h2><div class="today"><div><b>Aujourd’hui</b><span>9 h – 19 h</span></div><em>Ouvert</em></div><div style="margin-top:6px"><div class="hrow"><span>Mar → sam</span><span>9 h – 19 h</span></div><div class="hrow"><span>Dimanche</span><span>9 h – 13 h</span></div><div class="hrow"><span>Lundi</span><span>Fermé</span></div></div>
+<div class="map"><svg viewBox="0 0 390 220" preserveAspectRatio="xMidYMid slice"><rect width="390" height="220" fill="#F6F3EC"/><path d="M-20 170C100 150 200 190 410 150" stroke="#D9E3EC" stroke-width="30" fill="none"/><g stroke="#fff" stroke-width="8"><path d="M60 -10L150 230M-10 70L410 50"/></g><circle cx="200" cy="100" r="18" fill="#1C2541" opacity=".14"/><circle cx="200" cy="100" r="6" fill="#1C2541"/></svg></div><p style="margin-top:14px;font-size:14.5px">Les Douceurs de Nour · <span class="ph">[Adresse], 130XX Marseille</span></p><div class="two"><span class="btn a">Itinéraire</span><span class="btn o">Appeler</span></div><p class="illu">Livraison 8 €, offerte dès 80 €.</p></section>
+<section class="final" id="mb-final"><div class="cap">Commandes</div><h2>Commandez votre plateau</h2><p>48 h avant, 2 semaines en période de fête.</p><span class="btn a">Commander</span></section>
+<footer id="mb-foot"><span style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Amiri;font-weight:700;font-size:23px;color:#1C2541">Les Douceurs de Nour</span><span style="font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#A88533;font-weight:700;margin-top:3px">Pâtisseries orientales</span></span><p style="margin-top:10px">Pâtisseries orientales faites maison, sur commande, Marseille.</p><div class="links"><span>Plateaux</span><span>La carte</span><span>Occasions</span><span>Commander</span><span>Allergènes</span><span>Mentions légales</span></div><div class="sm"><span>[04 00 00 00 00]</span><span>Maquette — restaurant fictif</span></div></footer>
+<div class="sticky" id="sticky"><span class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span class="btn a">Commander</span></div>
+
+</div>
+<script>
+  // la maquette ordinateur est dessinée sur 1440 px : on la met à l'échelle de la fenêtre
+  const dk = document.querySelector('.dk');
+  let lastW = 0;
+  function fit() {
+    const w = document.documentElement.clientWidth;
+    if (w === lastW) return;
+    lastW = w;
+    dk.style.zoom = w > 760 ? w / 1440 : '';
+  }
+  addEventListener('resize', fit); setInterval(fit, 300); fit();
+
+  // points du carrousel (mobile)
+  const rail = document.querySelector('.mb [data-rail]');
+  const dots = [...document.querySelectorAll('.mb [data-dots] i')];
+  rail.addEventListener('scroll', () => {
+    const i = Math.round(rail.scrollLeft / (rail.scrollWidth - rail.clientWidth) * (dots.length - 1));
+    dots.forEach((d, k) => d.classList.toggle('on', k === i));
+  }, { passive: true });
+</script>
+</body>
+</html>
